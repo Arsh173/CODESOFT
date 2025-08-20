@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arsh - Portfolio</title>
+  <link rel="stylesheet" href="STYLES.CSS" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Arsh</h1>
+    <p>Web Developer | Designer | Problem Solver</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="IMAGE.JPG" alt="Arsh's Photo" />
+    <p>
+      I'm a front-end web developer passionate about creating interactive applications and experiences on the web. Proficient in HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="PROJECT1.PNG" alt="Project 1">
+      <h3>Project One</h3>
+      <p>A responsive website built using HTML and CSS.</p>
+    </div>
+    <div class="project">
+      <img src="PROJECT2.png" alt="Project 2">
+      <h3>Project Two</h3>
+      <p>A responsive card built using HTML and CSS.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" download>Download My Resume (PDF)</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="arshansari755891@gmail.com">email</a></p>
+    <p>Phone: +91 9368XXXXXX</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Arsh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+CSS CODE STARTS FROM HERE
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1b1d1e, #e0ffff);
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+
+header, section, footer {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+  gap:10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+
+#about {
+  background-color: #ffffff;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #6a11cb;
+  margin: 15px 0;
+}
+
+
+#skills {
+  background: #f5f5f5;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+#skills li {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+#skills li:hover {
+  transform: scale(1.1);
+}
+
+
+#projects {
+  background-color: #ffffff;
+}
+
+.project {
+  margin: 20px 0;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  margin-top: 10px;
+  color: #6a11cb;
+}
+
+.project p {
+  margin-top: 5px;
+  color: #555;
+}
+
+
+#resume {
+  background: #e0f7fa;
+
+}
+
+#resume a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+  background: #b2dfdb;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#resume a:hover {
+  background: #80cbc4;
+}
+
+
+#contact {
+  background: #fce4ec;
+  color: #880e4f;
+}
+
+#contact a {
+  color: #ad1457;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: #333;
+  color: #eee;
+  font-size: 0.9em;
+  border-radius: 0;
+  padding: 15px;
+}
+
